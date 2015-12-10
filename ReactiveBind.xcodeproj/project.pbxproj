@@ -1,0 +1,813 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DEA5339A1C191258001930DA /* ReactiveBind.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEA5338F1C191258001930DA /* ReactiveBind.framework */; };
+		DEA5339F1C191258001930DA /* ReactiveBindTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA5339E1C191258001930DA /* ReactiveBindTests.swift */; };
+		DEA533B71C1912B8001930DA /* ViewBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA533B61C1912B8001930DA /* ViewBinding.swift */; };
+		DEA533B81C1912C9001930DA /* ViewBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA533B61C1912B8001930DA /* ViewBinding.swift */; };
+		DEA533F21C1913D3001930DA /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEA533C41C1913A5001930DA /* ReactiveCocoa.framework */; };
+		DEA533F31C1913D3001930DA /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEA533DB1C1913A9001930DA /* Result.framework */; };
+		DEA533F41C1913DA001930DA /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEA533C81C1913A5001930DA /* ReactiveCocoa.framework */; };
+		DEA533F51C1913DA001930DA /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEA533DF1C1913A9001930DA /* Result.framework */; };
+		DEA533F71C191408001930DA /* Binding.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA533F61C191408001930DA /* Binding.swift */; };
+		DEA533F81C191408001930DA /* Binding.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA533F61C191408001930DA /* Binding.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DEA5339B1C191258001930DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DEA533861C191258001930DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DEA5338E1C191258001930DA;
+			remoteInfo = ReactiveBind;
+		};
+		DEA533C31C1913A5001930DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DEA533BA1C1913A4001930DA /* ReactiveCocoa.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D04725EA19E49ED7006002AA;
+			remoteInfo = "ReactiveCocoa-Mac";
+		};
+		DEA533C51C1913A5001930DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DEA533BA1C1913A4001930DA /* ReactiveCocoa.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D04725F519E49ED7006002AA;
+			remoteInfo = "ReactiveCocoa-MacTests";
+		};
+		DEA533C71C1913A5001930DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DEA533BA1C1913A4001930DA /* ReactiveCocoa.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D047260C19E49F82006002AA;
+			remoteInfo = "ReactiveCocoa-iOS";
+		};
+		DEA533C91C1913A5001930DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DEA533BA1C1913A4001930DA /* ReactiveCocoa.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D047261619E49F82006002AA;
+			remoteInfo = "ReactiveCocoa-iOSTests";
+		};
+		DEA533CB1C1913A5001930DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DEA533BA1C1913A4001930DA /* ReactiveCocoa.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A9B315541B3940610001CB9C;
+			remoteInfo = "ReactiveCocoa-watchOS";
+		};
+		DEA533CD1C1913A5001930DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DEA533BA1C1913A4001930DA /* ReactiveCocoa.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 57A4D2411BA13D7A00F7D4B1;
+			remoteInfo = "ReactiveCocoa-tvOS";
+		};
+		DEA533DA1C1913A9001930DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DEA533CF1C1913A9001930DA /* Result.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D45480571A9572F5009D7229;
+			remoteInfo = "Result-Mac";
+		};
+		DEA533DC1C1913A9001930DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DEA533CF1C1913A9001930DA /* Result.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D45480671A9572F5009D7229;
+			remoteInfo = "Result-MacTests";
+		};
+		DEA533DE1C1913A9001930DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DEA533CF1C1913A9001930DA /* Result.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D454807D1A957361009D7229;
+			remoteInfo = "Result-iOS";
+		};
+		DEA533E01C1913A9001930DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DEA533CF1C1913A9001930DA /* Result.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D45480871A957362009D7229;
+			remoteInfo = "Result-iOSTests";
+		};
+		DEA533E21C1913A9001930DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DEA533CF1C1913A9001930DA /* Result.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 57FCDE471BA280DC00130C48;
+			remoteInfo = "Result-tvOS";
+		};
+		DEA533E41C1913A9001930DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DEA533CF1C1913A9001930DA /* Result.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 57FCDE541BA280E000130C48;
+			remoteInfo = "Result-tvOSTests";
+		};
+		DEA533E61C1913A9001930DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DEA533CF1C1913A9001930DA /* Result.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D03579A31B2B788F005D26AE;
+			remoteInfo = "Result-watchOS";
+		};
+		DEA533E81C1913A9001930DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DEA533CF1C1913A9001930DA /* Result.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D03579B01B2B78A1005D26AE;
+			remoteInfo = "Result-watchOSTests";
+		};
+		DEA533EA1C1913BF001930DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DEA533CF1C1913A9001930DA /* Result.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D45480561A9572F5009D7229;
+			remoteInfo = "Result-Mac";
+		};
+		DEA533EC1C1913BF001930DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DEA533BA1C1913A4001930DA /* ReactiveCocoa.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D04725E919E49ED7006002AA;
+			remoteInfo = "ReactiveCocoa-Mac";
+		};
+		DEA533EE1C1913C7001930DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DEA533CF1C1913A9001930DA /* Result.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D454807C1A957361009D7229;
+			remoteInfo = "Result-iOS";
+		};
+		DEA533F01C1913C7001930DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DEA533BA1C1913A4001930DA /* ReactiveCocoa.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D047260B19E49F82006002AA;
+			remoteInfo = "ReactiveCocoa-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DEA5338F1C191258001930DA /* ReactiveBind.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReactiveBind.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEA533921C191258001930DA /* ReactiveBind.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReactiveBind.h; sourceTree = "<group>"; };
+		DEA533941C191258001930DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEA533991C191258001930DA /* ReactiveBind-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ReactiveBind-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEA5339E1C191258001930DA /* ReactiveBindTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactiveBindTests.swift; sourceTree = "<group>"; };
+		DEA533A01C191258001930DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEA533AE1C19129D001930DA /* ReactiveBind.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReactiveBind.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEA533B61C1912B8001930DA /* ViewBinding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewBinding.swift; sourceTree = "<group>"; };
+		DEA533BA1C1913A4001930DA /* ReactiveCocoa.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ReactiveCocoa.xcodeproj; path = Carthage/Checkouts/ReactiveCocoa/ReactiveCocoa.xcodeproj; sourceTree = "<group>"; };
+		DEA533CF1C1913A9001930DA /* Result.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Result.xcodeproj; path = Carthage/Checkouts/Result/Result.xcodeproj; sourceTree = "<group>"; };
+		DEA533F61C191408001930DA /* Binding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Binding.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DEA5338B1C191258001930DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEA533F41C1913DA001930DA /* ReactiveCocoa.framework in Frameworks */,
+				DEA533F51C1913DA001930DA /* Result.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEA533961C191258001930DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEA5339A1C191258001930DA /* ReactiveBind.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEA533AA1C19129D001930DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEA533F21C1913D3001930DA /* ReactiveCocoa.framework in Frameworks */,
+				DEA533F31C1913D3001930DA /* Result.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DEA533851C191258001930DA = {
+			isa = PBXGroup;
+			children = (
+				DEA533CF1C1913A9001930DA /* Result.xcodeproj */,
+				DEA533BA1C1913A4001930DA /* ReactiveCocoa.xcodeproj */,
+				DEA533911C191258001930DA /* ReactiveBind */,
+				DEA5339D1C191258001930DA /* ReactiveBindTests */,
+				DEA533901C191258001930DA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DEA533901C191258001930DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DEA5338F1C191258001930DA /* ReactiveBind.framework */,
+				DEA533991C191258001930DA /* ReactiveBind-iOSTests.xctest */,
+				DEA533AE1C19129D001930DA /* ReactiveBind.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DEA533911C191258001930DA /* ReactiveBind */ = {
+			isa = PBXGroup;
+			children = (
+				DEA533921C191258001930DA /* ReactiveBind.h */,
+				DEA533941C191258001930DA /* Info.plist */,
+				DEA533F61C191408001930DA /* Binding.swift */,
+				DEA533B61C1912B8001930DA /* ViewBinding.swift */,
+			);
+			path = ReactiveBind;
+			sourceTree = "<group>";
+		};
+		DEA5339D1C191258001930DA /* ReactiveBindTests */ = {
+			isa = PBXGroup;
+			children = (
+				DEA5339E1C191258001930DA /* ReactiveBindTests.swift */,
+				DEA533A01C191258001930DA /* Info.plist */,
+			);
+			path = ReactiveBindTests;
+			sourceTree = "<group>";
+		};
+		DEA533BB1C1913A4001930DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DEA533C41C1913A5001930DA /* ReactiveCocoa.framework */,
+				DEA533C61C1913A5001930DA /* ReactiveCocoaTests.xctest */,
+				DEA533C81C1913A5001930DA /* ReactiveCocoa.framework */,
+				DEA533CA1C1913A5001930DA /* ReactiveCocoaTests.xctest */,
+				DEA533CC1C1913A5001930DA /* ReactiveCocoa.framework */,
+				DEA533CE1C1913A5001930DA /* ReactiveCocoa.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DEA533D01C1913A9001930DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DEA533DB1C1913A9001930DA /* Result.framework */,
+				DEA533DD1C1913A9001930DA /* Result-MacTests.xctest */,
+				DEA533DF1C1913A9001930DA /* Result.framework */,
+				DEA533E11C1913A9001930DA /* Result-iOSTests.xctest */,
+				DEA533E31C1913A9001930DA /* Result.framework */,
+				DEA533E51C1913A9001930DA /* Result-tvOSTests.xctest */,
+				DEA533E71C1913A9001930DA /* Result.framework */,
+				DEA533E91C1913A9001930DA /* Result-watchOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		DEA5338C1C191258001930DA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEA533AB1C19129D001930DA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		DEA5338E1C191258001930DA /* ReactiveBind-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEA533A31C191258001930DA /* Build configuration list for PBXNativeTarget "ReactiveBind-iOS" */;
+			buildPhases = (
+				DEA5338A1C191258001930DA /* Sources */,
+				DEA5338B1C191258001930DA /* Frameworks */,
+				DEA5338C1C191258001930DA /* Headers */,
+				DEA5338D1C191258001930DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DEA533EF1C1913C7001930DA /* PBXTargetDependency */,
+				DEA533F11C1913C7001930DA /* PBXTargetDependency */,
+			);
+			name = "ReactiveBind-iOS";
+			productName = ReactiveBind;
+			productReference = DEA5338F1C191258001930DA /* ReactiveBind.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DEA533981C191258001930DA /* ReactiveBind-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEA533A61C191258001930DA /* Build configuration list for PBXNativeTarget "ReactiveBind-iOSTests" */;
+			buildPhases = (
+				DEA533951C191258001930DA /* Sources */,
+				DEA533961C191258001930DA /* Frameworks */,
+				DEA533971C191258001930DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DEA5339C1C191258001930DA /* PBXTargetDependency */,
+			);
+			name = "ReactiveBind-iOSTests";
+			productName = ReactiveBindTests;
+			productReference = DEA533991C191258001930DA /* ReactiveBind-iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DEA533AD1C19129D001930DA /* ReactiveBind */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEA533B31C19129D001930DA /* Build configuration list for PBXNativeTarget "ReactiveBind" */;
+			buildPhases = (
+				DEA533A91C19129D001930DA /* Sources */,
+				DEA533AA1C19129D001930DA /* Frameworks */,
+				DEA533AB1C19129D001930DA /* Headers */,
+				DEA533AC1C19129D001930DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DEA533EB1C1913BF001930DA /* PBXTargetDependency */,
+				DEA533ED1C1913BF001930DA /* PBXTargetDependency */,
+			);
+			name = ReactiveBind;
+			productName = ReactiveBind;
+			productReference = DEA533AE1C19129D001930DA /* ReactiveBind.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DEA533861C191258001930DA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Matthew Purland";
+				TargetAttributes = {
+					DEA5338E1C191258001930DA = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					DEA533981C191258001930DA = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					DEA533AD1C19129D001930DA = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+				};
+			};
+			buildConfigurationList = DEA533891C191258001930DA /* Build configuration list for PBXProject "ReactiveBind" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DEA533851C191258001930DA;
+			productRefGroup = DEA533901C191258001930DA /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = DEA533BB1C1913A4001930DA /* Products */;
+					ProjectRef = DEA533BA1C1913A4001930DA /* ReactiveCocoa.xcodeproj */;
+				},
+				{
+					ProductGroup = DEA533D01C1913A9001930DA /* Products */;
+					ProjectRef = DEA533CF1C1913A9001930DA /* Result.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				DEA533AD1C19129D001930DA /* ReactiveBind */,
+				DEA5338E1C191258001930DA /* ReactiveBind-iOS */,
+				DEA533981C191258001930DA /* ReactiveBind-iOSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		DEA533C41C1913A5001930DA /* ReactiveCocoa.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ReactiveCocoa.framework;
+			remoteRef = DEA533C31C1913A5001930DA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DEA533C61C1913A5001930DA /* ReactiveCocoaTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ReactiveCocoaTests.xctest;
+			remoteRef = DEA533C51C1913A5001930DA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DEA533C81C1913A5001930DA /* ReactiveCocoa.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ReactiveCocoa.framework;
+			remoteRef = DEA533C71C1913A5001930DA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DEA533CA1C1913A5001930DA /* ReactiveCocoaTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ReactiveCocoaTests.xctest;
+			remoteRef = DEA533C91C1913A5001930DA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DEA533CC1C1913A5001930DA /* ReactiveCocoa.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ReactiveCocoa.framework;
+			remoteRef = DEA533CB1C1913A5001930DA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DEA533CE1C1913A5001930DA /* ReactiveCocoa.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ReactiveCocoa.framework;
+			remoteRef = DEA533CD1C1913A5001930DA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DEA533DB1C1913A9001930DA /* Result.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Result.framework;
+			remoteRef = DEA533DA1C1913A9001930DA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DEA533DD1C1913A9001930DA /* Result-MacTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Result-MacTests.xctest";
+			remoteRef = DEA533DC1C1913A9001930DA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DEA533DF1C1913A9001930DA /* Result.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Result.framework;
+			remoteRef = DEA533DE1C1913A9001930DA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DEA533E11C1913A9001930DA /* Result-iOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Result-iOSTests.xctest";
+			remoteRef = DEA533E01C1913A9001930DA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DEA533E31C1913A9001930DA /* Result.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Result.framework;
+			remoteRef = DEA533E21C1913A9001930DA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DEA533E51C1913A9001930DA /* Result-tvOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Result-tvOSTests.xctest";
+			remoteRef = DEA533E41C1913A9001930DA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DEA533E71C1913A9001930DA /* Result.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Result.framework;
+			remoteRef = DEA533E61C1913A9001930DA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		DEA533E91C1913A9001930DA /* Result-watchOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Result-watchOSTests.xctest";
+			remoteRef = DEA533E81C1913A9001930DA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DEA5338D1C191258001930DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEA533971C191258001930DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEA533AC1C19129D001930DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DEA5338A1C191258001930DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEA533B81C1912C9001930DA /* ViewBinding.swift in Sources */,
+				DEA533F81C191408001930DA /* Binding.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEA533951C191258001930DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEA5339F1C191258001930DA /* ReactiveBindTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEA533A91C19129D001930DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEA533B71C1912B8001930DA /* ViewBinding.swift in Sources */,
+				DEA533F71C191408001930DA /* Binding.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DEA5339C1C191258001930DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DEA5338E1C191258001930DA /* ReactiveBind-iOS */;
+			targetProxy = DEA5339B1C191258001930DA /* PBXContainerItemProxy */;
+		};
+		DEA533EB1C1913BF001930DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Result-Mac";
+			targetProxy = DEA533EA1C1913BF001930DA /* PBXContainerItemProxy */;
+		};
+		DEA533ED1C1913BF001930DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ReactiveCocoa-Mac";
+			targetProxy = DEA533EC1C1913BF001930DA /* PBXContainerItemProxy */;
+		};
+		DEA533EF1C1913C7001930DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Result-iOS";
+			targetProxy = DEA533EE1C1913C7001930DA /* PBXContainerItemProxy */;
+		};
+		DEA533F11C1913C7001930DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ReactiveCocoa-iOS";
+			targetProxy = DEA533F01C1913C7001930DA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DEA533A11C191258001930DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DEA533A21C191258001930DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DEA533A41C191258001930DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ReactiveBind/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.mpurland.ReactiveBind;
+				PRODUCT_NAME = ReactiveBind;
+				SKIP_INSTALL = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "";
+			};
+			name = Debug;
+		};
+		DEA533A51C191258001930DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ReactiveBind/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.mpurland.ReactiveBind;
+				PRODUCT_NAME = ReactiveBind;
+				SKIP_INSTALL = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "";
+			};
+			name = Release;
+		};
+		DEA533A71C191258001930DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ReactiveBindTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.mpurland.ReactiveBindTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DEA533A81C191258001930DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ReactiveBindTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.mpurland.ReactiveBindTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DEA533B41C19129D001930DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = ReactiveBind/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.mpurland.ReactiveBind;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DEA533B51C19129D001930DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = ReactiveBind/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.mpurland.ReactiveBind;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DEA533891C191258001930DA /* Build configuration list for PBXProject "ReactiveBind" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEA533A11C191258001930DA /* Debug */,
+				DEA533A21C191258001930DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DEA533A31C191258001930DA /* Build configuration list for PBXNativeTarget "ReactiveBind-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEA533A41C191258001930DA /* Debug */,
+				DEA533A51C191258001930DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DEA533A61C191258001930DA /* Build configuration list for PBXNativeTarget "ReactiveBind-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEA533A71C191258001930DA /* Debug */,
+				DEA533A81C191258001930DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DEA533B31C19129D001930DA /* Build configuration list for PBXNativeTarget "ReactiveBind" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEA533B41C19129D001930DA /* Debug */,
+				DEA533B51C19129D001930DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DEA533861C191258001930DA /* Project object */;
+}
