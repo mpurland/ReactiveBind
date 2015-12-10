@@ -3,45 +3,45 @@ import ReactiveCocoa
 
 extension UIView {
     public var rac_alpha: MutableProperty<CGFloat> {
-        return lazyMutableProperty(self, &BindingAssociationKeys.AlphaProperty, { self.alpha = $0 }, { self.alpha  })
+        return lazyMutableProperty(self, &ReactiveBindAssocationKeys.AlphaProperty, { self.alpha = $0 }, { self.alpha  })
     }
     
     public var rac_hidden: MutableProperty<Bool> {
-        return lazyMutableProperty(self, &BindingAssociationKeys.HiddenProperty, { self.hidden = $0 }, { self.hidden  })
+        return lazyMutableProperty(self, &ReactiveBindAssocationKeys.HiddenProperty, { self.hidden = $0 }, { self.hidden  })
     }
 }
 
 extension UIBarItem {
     public var rac_enabled: MutableProperty<Bool> {
-        return lazyMutableProperty(self, &BindingAssociationKeys.EnabledProperty, { self.enabled = $0 }, { self.enabled  })
+        return lazyMutableProperty(self, &ReactiveBindAssocationKeys.EnabledProperty, { self.enabled = $0 }, { self.enabled  })
     }
 }
 
 extension UIControl {
     public var rac_enabled: MutableProperty<Bool> {
-        return lazyMutableProperty(self, &BindingAssociationKeys.EnabledProperty, { self.enabled = $0 }, { self.enabled  })
+        return lazyMutableProperty(self, &ReactiveBindAssocationKeys.EnabledProperty, { self.enabled = $0 }, { self.enabled  })
     }
     public var rac_highlighted: MutableProperty<Bool> {
-        return lazyMutableProperty(self, &BindingAssociationKeys.HighlightedProperty, { self.highlighted = $0 }, { self.highlighted  })
+        return lazyMutableProperty(self, &ReactiveBindAssocationKeys.HighlightedProperty, { self.highlighted = $0 }, { self.highlighted  })
     }
     public var rac_selected: MutableProperty<Bool> {
-        return lazyMutableProperty(self, &BindingAssociationKeys.SelectedProperty, { self.selected = $0 }, { self.selected  })
+        return lazyMutableProperty(self, &ReactiveBindAssocationKeys.SelectedProperty, { self.selected = $0 }, { self.selected  })
     }
 }
 
 extension UILabel {
     public var rac_text: MutableProperty<String?> {
-        return lazyMutableProperty(self, &BindingAssociationKeys.TextProperty, { self.text = $0 }, { self.text  })
+        return lazyMutableProperty(self, &ReactiveBindAssocationKeys.TextProperty, { self.text = $0 }, { self.text  })
     }
     
     public var rac_attributedText: MutableProperty<NSAttributedString?> {
-        return lazyMutableProperty(self, &BindingAssociationKeys.AttributedTextProperty, { self.attributedText = $0 }, { self.attributedText  })
+        return lazyMutableProperty(self, &ReactiveBindAssocationKeys.AttributedTextProperty, { self.attributedText = $0 }, { self.attributedText  })
     }
 }
 
 extension UITextField {
     public var rac_text: MutableProperty<String> {
-        return lazyAssociatedProperty(self, &BindingAssociationKeys.TextProperty) {
+        return lazyAssociatedProperty(self, &ReactiveBindAssocationKeys.TextProperty) {
             self.rac_signalForControlEvents(UIControlEvents.EditingChanged).toSignalProducer().startWithNext { _ in
                 let value = self.text ?? ""
                 self.rac_text.value = value
@@ -79,6 +79,6 @@ extension UITextField {
 
 extension UIImageView {
     public var rac_image: MutableProperty<UIImage?> {
-        return lazyMutableProperty(self, &BindingAssociationKeys.ImageProperty, { self.image = $0 }, { self.image })
+        return lazyMutableProperty(self, &ReactiveBindAssocationKeys.ImageProperty, { self.image = $0 }, { self.image })
     }
 }

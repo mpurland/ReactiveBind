@@ -1,7 +1,7 @@
 import Foundation
 import ReactiveCocoa
 
-private enum BindingAssocationKey: String {
+public enum ReactiveBindAssocationKey: String {
     case Hidden
     case Alpha
     case Text
@@ -12,18 +12,18 @@ private enum BindingAssocationKey: String {
     case Image
 }
 
-struct BindingAssociationKeys {
-    static var HiddenProperty = BindingAssocationKey.Hidden.rawValue
-    static var AlphaProperty = BindingAssocationKey.Alpha.rawValue
-    static var TextProperty = BindingAssocationKey.Text.rawValue
-    static var AttributedTextProperty = BindingAssocationKey.AttributedText.rawValue
-    static var EnabledProperty = BindingAssocationKey.Enabled.rawValue
-    static var HighlightedProperty = BindingAssocationKey.Highlighted.rawValue
-    static var SelectedProperty = BindingAssocationKey.Selected.rawValue
-    static var ImageProperty = BindingAssocationKey.Image.rawValue
+public struct ReactiveBindAssocationKeys {
+    static var HiddenProperty = ReactiveBindAssocationKey.Hidden.rawValue
+    static var AlphaProperty = ReactiveBindAssocationKey.Alpha.rawValue
+    static var TextProperty = ReactiveBindAssocationKey.Text.rawValue
+    static var AttributedTextProperty = ReactiveBindAssocationKey.AttributedText.rawValue
+    static var EnabledProperty = ReactiveBindAssocationKey.Enabled.rawValue
+    static var HighlightedProperty = ReactiveBindAssocationKey.Highlighted.rawValue
+    static var SelectedProperty = ReactiveBindAssocationKey.Selected.rawValue
+    static var ImageProperty = ReactiveBindAssocationKey.Image.rawValue
 }
 
-func lazyAssociatedProperty<T: AnyObject>(host: AnyObject, _ key: UnsafePointer<Void>, _ factory: ()->T) -> T {
+public func lazyAssociatedProperty<T: AnyObject>(host: AnyObject, _ key: UnsafePointer<Void>, _ factory: ()->T) -> T {
     var associatedProperty = objc_getAssociatedObject(host, key) as? T
     
     if associatedProperty == nil {
@@ -33,7 +33,7 @@ func lazyAssociatedProperty<T: AnyObject>(host: AnyObject, _ key: UnsafePointer<
     return associatedProperty!
 }
 
-func lazyMutableProperty<T>(host: AnyObject, _ key: UnsafePointer<Void>, _ setter: T -> (), _ getter: () -> T) -> MutableProperty<T> {
+public func lazyMutableProperty<T>(host: AnyObject, _ key: UnsafePointer<Void>, _ setter: T -> (), _ getter: () -> T) -> MutableProperty<T> {
     return lazyAssociatedProperty(host, key) {
         let property = MutableProperty<T>(getter())
         property.producer.startWithNext { newValue in
@@ -43,14 +43,14 @@ func lazyMutableProperty<T>(host: AnyObject, _ key: UnsafePointer<Void>, _ sette
     }
 }
 
-func lazyMutablePropertyDefaultValue<T>(host: AnyObject, _ key: UnsafePointer<Void>, _ defaultValue: () -> T) -> MutableProperty<T> {
+public func lazyMutablePropertyDefaultValue<T>(host: AnyObject, _ key: UnsafePointer<Void>, _ defaultValue: () -> T) -> MutableProperty<T> {
     return lazyAssociatedProperty(host, key) {
         let property = MutableProperty<T>(defaultValue())
         return property
     }
 }
 
-func lazyMutablePropertyOptional<T>(host: AnyObject, _ key: UnsafePointer<Void>, _ setter: T? -> (), _ getter: () -> T?) -> MutableProperty<T?> {
+public func lazyMutablePropertyOptional<T>(host: AnyObject, _ key: UnsafePointer<Void>, _ setter: T? -> (), _ getter: () -> T?) -> MutableProperty<T?> {
     return lazyAssociatedProperty(host, key) {
         let property = MutableProperty<T?>(getter())
         property.producer.startWithNext { newValue in
