@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		DEA5339A1C191258001930DA /* ReactiveBind.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEA5338F1C191258001930DA /* ReactiveBind.framework */; };
-		DEA5339F1C191258001930DA /* ReactiveBindTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA5339E1C191258001930DA /* ReactiveBindTests.swift */; };
-		DEA533B71C1912B8001930DA /* ViewBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA533B61C1912B8001930DA /* ViewBinding.swift */; };
 		DEA533B81C1912C9001930DA /* ViewBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA533B61C1912B8001930DA /* ViewBinding.swift */; };
 		DEA533F21C1913D3001930DA /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEA533C41C1913A5001930DA /* ReactiveCocoa.framework */; };
 		DEA533F31C1913D3001930DA /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEA533DB1C1913A9001930DA /* Result.framework */; };
@@ -17,6 +15,9 @@
 		DEA533F51C1913DA001930DA /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEA533DF1C1913A9001930DA /* Result.framework */; };
 		DEA533F71C191408001930DA /* Binding.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA533F61C191408001930DA /* Binding.swift */; };
 		DEA533F81C191408001930DA /* Binding.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA533F61C191408001930DA /* Binding.swift */; };
+		DEA535711C1A3A14001930DA /* ReactiveBindSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA535701C1A3A14001930DA /* ReactiveBindSpec.swift */; };
+		DEA535731C1A3A14001930DA /* ReactiveBind.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEA533AE1C19129D001930DA /* ReactiveBind.framework */; };
+		DEA535791C1A3B12001930DA /* ReactiveBindSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA535701C1A3A14001930DA /* ReactiveBindSpec.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -153,6 +154,13 @@
 			remoteGlobalIDString = D047260B19E49F82006002AA;
 			remoteInfo = "ReactiveCocoa-iOS";
 		};
+		DEA535741C1A3A14001930DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DEA533861C191258001930DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DEA533AD1C19129D001930DA;
+			remoteInfo = ReactiveBind;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -160,13 +168,14 @@
 		DEA533921C191258001930DA /* ReactiveBind.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReactiveBind.h; sourceTree = "<group>"; };
 		DEA533941C191258001930DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DEA533991C191258001930DA /* ReactiveBind-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ReactiveBind-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DEA5339E1C191258001930DA /* ReactiveBindTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactiveBindTests.swift; sourceTree = "<group>"; };
-		DEA533A01C191258001930DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DEA533AE1C19129D001930DA /* ReactiveBind.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReactiveBind.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEA533B61C1912B8001930DA /* ViewBinding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewBinding.swift; sourceTree = "<group>"; };
 		DEA533BA1C1913A4001930DA /* ReactiveCocoa.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ReactiveCocoa.xcodeproj; path = Carthage/Checkouts/ReactiveCocoa/ReactiveCocoa.xcodeproj; sourceTree = "<group>"; };
 		DEA533CF1C1913A9001930DA /* Result.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Result.xcodeproj; path = Carthage/Checkouts/Result/Result.xcodeproj; sourceTree = "<group>"; };
 		DEA533F61C191408001930DA /* Binding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Binding.swift; sourceTree = "<group>"; };
+		DEA5356E1C1A3A14001930DA /* ReactiveBindTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReactiveBindTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEA535701C1A3A14001930DA /* ReactiveBindSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactiveBindSpec.swift; sourceTree = "<group>"; };
+		DEA535721C1A3A14001930DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +205,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DEA5356B1C1A3A14001930DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEA535731C1A3A14001930DA /* ReactiveBind.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -205,7 +222,7 @@
 				DEA533CF1C1913A9001930DA /* Result.xcodeproj */,
 				DEA533BA1C1913A4001930DA /* ReactiveCocoa.xcodeproj */,
 				DEA533911C191258001930DA /* ReactiveBind */,
-				DEA5339D1C191258001930DA /* ReactiveBindTests */,
+				DEA5356F1C1A3A14001930DA /* ReactiveBindTests */,
 				DEA533901C191258001930DA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -216,6 +233,7 @@
 				DEA5338F1C191258001930DA /* ReactiveBind.framework */,
 				DEA533991C191258001930DA /* ReactiveBind-iOSTests.xctest */,
 				DEA533AE1C19129D001930DA /* ReactiveBind.framework */,
+				DEA5356E1C1A3A14001930DA /* ReactiveBindTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -229,15 +247,6 @@
 				DEA533B61C1912B8001930DA /* ViewBinding.swift */,
 			);
 			path = ReactiveBind;
-			sourceTree = "<group>";
-		};
-		DEA5339D1C191258001930DA /* ReactiveBindTests */ = {
-			isa = PBXGroup;
-			children = (
-				DEA5339E1C191258001930DA /* ReactiveBindTests.swift */,
-				DEA533A01C191258001930DA /* Info.plist */,
-			);
-			path = ReactiveBindTests;
 			sourceTree = "<group>";
 		};
 		DEA533BB1C1913A4001930DA /* Products */ = {
@@ -266,6 +275,15 @@
 				DEA533E91C1913A9001930DA /* Result-watchOSTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		DEA5356F1C1A3A14001930DA /* ReactiveBindTests */ = {
+			isa = PBXGroup;
+			children = (
+				DEA535701C1A3A14001930DA /* ReactiveBindSpec.swift */,
+				DEA535721C1A3A14001930DA /* Info.plist */,
+			);
+			path = ReactiveBindTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -346,6 +364,24 @@
 			productReference = DEA533AE1C19129D001930DA /* ReactiveBind.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		DEA5356D1C1A3A14001930DA /* ReactiveBindTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEA535761C1A3A14001930DA /* Build configuration list for PBXNativeTarget "ReactiveBindTests" */;
+			buildPhases = (
+				DEA5356A1C1A3A14001930DA /* Sources */,
+				DEA5356B1C1A3A14001930DA /* Frameworks */,
+				DEA5356C1C1A3A14001930DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DEA535751C1A3A14001930DA /* PBXTargetDependency */,
+			);
+			name = ReactiveBindTests;
+			productName = ReactiveBindTests;
+			productReference = DEA5356E1C1A3A14001930DA /* ReactiveBindTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -363,6 +399,9 @@
 						CreatedOnToolsVersion = 7.1.1;
 					};
 					DEA533AD1C19129D001930DA = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					DEA5356D1C1A3A14001930DA = {
 						CreatedOnToolsVersion = 7.1.1;
 					};
 				};
@@ -390,6 +429,7 @@
 			projectRoot = "";
 			targets = (
 				DEA533AD1C19129D001930DA /* ReactiveBind */,
+				DEA5356D1C1A3A14001930DA /* ReactiveBindTests */,
 				DEA5338E1C191258001930DA /* ReactiveBind-iOS */,
 				DEA533981C191258001930DA /* ReactiveBind-iOSTests */,
 			);
@@ -519,6 +559,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DEA5356C1C1A3A14001930DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -535,7 +582,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEA5339F1C191258001930DA /* ReactiveBindTests.swift in Sources */,
+				DEA535791C1A3B12001930DA /* ReactiveBindSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -543,8 +590,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEA533B71C1912B8001930DA /* ViewBinding.swift in Sources */,
 				DEA533F71C191408001930DA /* Binding.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEA5356A1C1A3A14001930DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEA535711C1A3A14001930DA /* ReactiveBindSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -575,6 +629,11 @@
 			isa = PBXTargetDependency;
 			name = "ReactiveCocoa-iOS";
 			targetProxy = DEA533F01C1913C7001930DA /* PBXContainerItemProxy */;
+		};
+		DEA535751C1A3A14001930DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DEA533AD1C19129D001930DA /* ReactiveBind */;
+			targetProxy = DEA535741C1A3A14001930DA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -771,6 +830,34 @@
 			};
 			name = Release;
 		};
+		DEA535771C1A3A14001930DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ReactiveBindTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.mpurland.reactivebind.ReactiveBindTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		DEA535781C1A3A14001930DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ReactiveBindTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.github.mpurland.reactivebind.ReactiveBindTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -790,6 +877,7 @@
 				DEA533A51C191258001930DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DEA533A61C191258001930DA /* Build configuration list for PBXNativeTarget "ReactiveBind-iOSTests" */ = {
 			isa = XCConfigurationList;
@@ -798,12 +886,22 @@
 				DEA533A81C191258001930DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DEA533B31C19129D001930DA /* Build configuration list for PBXNativeTarget "ReactiveBind" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DEA533B41C19129D001930DA /* Debug */,
 				DEA533B51C19129D001930DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DEA535761C1A3A14001930DA /* Build configuration list for PBXNativeTarget "ReactiveBindTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEA535771C1A3A14001930DA /* Debug */,
+				DEA535781C1A3A14001930DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
