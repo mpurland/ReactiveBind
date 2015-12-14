@@ -22,6 +22,10 @@
 		DEBE2A451C1F6998005DEF05 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEBE2A401C1F6989005DEF05 /* Result.framework */; };
 		DEBE2A461C1F69A3005DEF05 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEBE2A391C1F691D005DEF05 /* Result.framework */; };
 		DEBE2A471C1F69A3005DEF05 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEBE2A371C1F6919005DEF05 /* ReactiveCocoa.framework */; };
+		DEBE2A491C1F6DC7005DEF05 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBE2A481C1F6DC7005DEF05 /* Action.swift */; };
+		DEBE2A4A1C1F6DC7005DEF05 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBE2A481C1F6DC7005DEF05 /* Action.swift */; };
+		DEBE2A4C1C1F6DE8005DEF05 /* ReactiveCocoaExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBE2A4B1C1F6DE8005DEF05 /* ReactiveCocoaExt.swift */; };
+		DEBE2A4D1C1F6DE8005DEF05 /* ReactiveCocoaExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBE2A4B1C1F6DE8005DEF05 /* ReactiveCocoaExt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +85,8 @@
 		DEBE2A391C1F691D005DEF05 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 		DEBE2A3F1C1F6989005DEF05 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/Mac/ReactiveCocoa.framework; sourceTree = "<group>"; };
 		DEBE2A401C1F6989005DEF05 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/Mac/Result.framework; sourceTree = "<group>"; };
+		DEBE2A481C1F6DC7005DEF05 /* Action.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		DEBE2A4B1C1F6DE8005DEF05 /* ReactiveCocoaExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReactiveCocoaExt.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +155,8 @@
 				DEA533941C191258001930DA /* Info.plist */,
 				DEA533F61C191408001930DA /* Binding.swift */,
 				DEA533B61C1912B8001930DA /* ViewBinding.swift */,
+				DEBE2A481C1F6DC7005DEF05 /* Action.swift */,
+				DEBE2A4B1C1F6DE8005DEF05 /* ReactiveCocoaExt.swift */,
 			);
 			path = ReactiveBind;
 			sourceTree = "<group>";
@@ -364,6 +372,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEA533B81C1912C9001930DA /* ViewBinding.swift in Sources */,
+				DEBE2A4A1C1F6DC7005DEF05 /* Action.swift in Sources */,
+				DEBE2A4D1C1F6DE8005DEF05 /* ReactiveCocoaExt.swift in Sources */,
 				DEA533F81C191408001930DA /* Binding.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -380,7 +390,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEBE2A4C1C1F6DE8005DEF05 /* ReactiveCocoaExt.swift in Sources */,
 				DEA533F71C191408001930DA /* Binding.swift in Sources */,
+				DEBE2A491C1F6DC7005DEF05 /* Action.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
