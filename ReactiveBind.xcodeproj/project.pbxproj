@@ -14,10 +14,14 @@
 		DEA535711C1A3A14001930DA /* ReactiveBindSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA535701C1A3A14001930DA /* ReactiveBindSpec.swift */; };
 		DEA535731C1A3A14001930DA /* ReactiveBind.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEA533AE1C19129D001930DA /* ReactiveBind.framework */; };
 		DEA535791C1A3B12001930DA /* ReactiveBindSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA535701C1A3A14001930DA /* ReactiveBindSpec.swift */; };
-		DEA535DF1C1A4057001930DA /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEA535DD1C1A4057001930DA /* ReactiveCocoa.framework */; };
-		DEA535E01C1A4057001930DA /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEA535DE1C1A4057001930DA /* Result.framework */; };
-		DEA535E31C1A4062001930DA /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEA535E11C1A4062001930DA /* ReactiveCocoa.framework */; };
-		DEA535E41C1A4062001930DA /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEA535E21C1A4062001930DA /* Result.framework */; };
+		DEBE2A381C1F6919005DEF05 /* ReactiveCocoa.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = DEBE2A371C1F6919005DEF05 /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DEBE2A3A1C1F691D005DEF05 /* Result.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = DEBE2A391C1F691D005DEF05 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DEBE2A411C1F6989005DEF05 /* ReactiveCocoa.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = DEBE2A3F1C1F6989005DEF05 /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DEBE2A421C1F6989005DEF05 /* Result.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = DEBE2A401C1F6989005DEF05 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DEBE2A441C1F6998005DEF05 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEBE2A3F1C1F6989005DEF05 /* ReactiveCocoa.framework */; };
+		DEBE2A451C1F6998005DEF05 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEBE2A401C1F6989005DEF05 /* Result.framework */; };
+		DEBE2A461C1F69A3005DEF05 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEBE2A391C1F691D005DEF05 /* Result.framework */; };
+		DEBE2A471C1F69A3005DEF05 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEBE2A371C1F6919005DEF05 /* ReactiveCocoa.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +41,31 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		DEBE2A361C1F6904005DEF05 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DEBE2A381C1F6919005DEF05 /* ReactiveCocoa.framework in CopyFiles */,
+				DEBE2A3A1C1F691D005DEF05 /* Result.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEBE2A3D1C1F694A005DEF05 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DEBE2A411C1F6989005DEF05 /* ReactiveCocoa.framework in CopyFiles */,
+				DEBE2A421C1F6989005DEF05 /* Result.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		DEA5338F1C191258001930DA /* ReactiveBind.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReactiveBind.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEA533921C191258001930DA /* ReactiveBind.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReactiveBind.h; sourceTree = "<group>"; };
@@ -48,10 +77,10 @@
 		DEA5356E1C1A3A14001930DA /* ReactiveBindTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReactiveBindTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEA535701C1A3A14001930DA /* ReactiveBindSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactiveBindSpec.swift; sourceTree = "<group>"; };
 		DEA535721C1A3A14001930DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DEA535DD1C1A4057001930DA /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/Mac/ReactiveCocoa.framework; sourceTree = "<group>"; };
-		DEA535DE1C1A4057001930DA /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/Mac/Result.framework; sourceTree = "<group>"; };
-		DEA535E11C1A4062001930DA /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/iOS/ReactiveCocoa.framework; sourceTree = "<group>"; };
-		DEA535E21C1A4062001930DA /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		DEBE2A371C1F6919005DEF05 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/iOS/ReactiveCocoa.framework; sourceTree = "<group>"; };
+		DEBE2A391C1F691D005DEF05 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		DEBE2A3F1C1F6989005DEF05 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/Mac/ReactiveCocoa.framework; sourceTree = "<group>"; };
+		DEBE2A401C1F6989005DEF05 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/Mac/Result.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,8 +88,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEA535E31C1A4062001930DA /* ReactiveCocoa.framework in Frameworks */,
-				DEA535E41C1A4062001930DA /* Result.framework in Frameworks */,
+				DEBE2A461C1F69A3005DEF05 /* Result.framework in Frameworks */,
+				DEBE2A471C1F69A3005DEF05 /* ReactiveCocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,8 +105,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DEA535DF1C1A4057001930DA /* ReactiveCocoa.framework in Frameworks */,
-				DEA535E01C1A4057001930DA /* Result.framework in Frameworks */,
+				DEBE2A441C1F6998005DEF05 /* ReactiveCocoa.framework in Frameworks */,
+				DEBE2A451C1F6998005DEF05 /* Result.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,12 +165,28 @@
 		DEA535E51C1A406A001930DA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DEA535E11C1A4062001930DA /* ReactiveCocoa.framework */,
-				DEA535E21C1A4062001930DA /* Result.framework */,
-				DEA535DD1C1A4057001930DA /* ReactiveCocoa.framework */,
-				DEA535DE1C1A4057001930DA /* Result.framework */,
+				DEBE2A431C1F698D005DEF05 /* Mac */,
+				DEBE2A3E1C1F696D005DEF05 /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DEBE2A3E1C1F696D005DEF05 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				DEBE2A391C1F691D005DEF05 /* Result.framework */,
+				DEBE2A371C1F6919005DEF05 /* ReactiveCocoa.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		DEBE2A431C1F698D005DEF05 /* Mac */ = {
+			isa = PBXGroup;
+			children = (
+				DEBE2A3F1C1F6989005DEF05 /* ReactiveCocoa.framework */,
+				DEBE2A401C1F6989005DEF05 /* Result.framework */,
+			);
+			name = Mac;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,6 +234,7 @@
 				DEA533951C191258001930DA /* Sources */,
 				DEA533961C191258001930DA /* Frameworks */,
 				DEA533971C191258001930DA /* Resources */,
+				DEBE2A361C1F6904005DEF05 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -225,6 +271,7 @@
 				DEA5356A1C1A3A14001930DA /* Sources */,
 				DEA5356B1C1A3A14001930DA /* Frameworks */,
 				DEA5356C1C1A3A14001930DA /* Resources */,
+				DEBE2A3D1C1F694A005DEF05 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -463,6 +510,7 @@
 				);
 				INFOPLIST_FILE = ReactiveBind/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.mpurland.ReactiveBind;
 				PRODUCT_NAME = ReactiveBind;
@@ -485,6 +533,7 @@
 				);
 				INFOPLIST_FILE = ReactiveBind/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.mpurland.ReactiveBind;
 				PRODUCT_NAME = ReactiveBind;
@@ -497,7 +546,12 @@
 		DEA533A71C191258001930DA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ReactiveBindTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.mpurland.ReactiveBindTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -507,7 +561,12 @@
 		DEA533A81C191258001930DA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ReactiveBindTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.mpurland.ReactiveBindTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -574,9 +633,13 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = ReactiveBindTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.mpurland.reactivebind.ReactiveBindTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -588,9 +651,13 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = ReactiveBindTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_BUNDLE_IDENTIFIER = com.github.mpurland.reactivebind.ReactiveBindTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
