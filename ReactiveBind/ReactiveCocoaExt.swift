@@ -12,3 +12,23 @@ extension SignalProducerType {
         return flatMapError { _ in SignalProducer<Value, NoError>.empty }
     }
 }
+
+/// Bind an optional of MutablePropertyType to a Signal.
+public func <~ <P: MutablePropertyType>(property: P?, signal: Signal<P.Value, NoError>) -> Disposable? {
+    if let property = property {
+        let disposable: Disposable = property <~ signal
+        return disposable
+    }
+    
+    return nil
+}
+
+/// Bind an optional of MutablePropertyType to a SignalProducer.
+public func <~ <P: MutablePropertyType>(property: P?, signal: SignalProducer<P.Value, NoError>) -> Disposable? {
+    if let property = property {
+        let disposable: Disposable = property <~ signal
+        return disposable
+    }
+    
+    return nil
+}
