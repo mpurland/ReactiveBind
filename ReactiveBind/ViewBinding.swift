@@ -82,3 +82,21 @@ extension UIImageView {
         return lazyMutableProperty(self, &ReactiveBindAssocationKeys.ImageProperty, { self.image = $0 }, { self.image })
     }
 }
+
+extension UITableViewCell {
+    public var rac_highlighted: MutableProperty<Bool> {
+        return lazyMutableProperty(self, &ReactiveBindAssocationKeys.HighlightedProperty, { self.highlighted = $0 }, { self.highlighted  })
+    }
+    public var rac_selected: MutableProperty<Bool> {
+        return lazyMutableProperty(self, &ReactiveBindAssocationKeys.SelectedProperty, { self.selected = $0 }, { self.selected  })
+    }
+}
+
+extension UICollectionViewCell {
+    public var rac_highlighted: MutableProperty<Bool> {
+        return lazyMutableProperty(self, &ReactiveBindAssocationKeys.HighlightedProperty, { self.highlighted = $0 }, { self.highlighted  })
+    }
+    public var rac_selected: MutableProperty<Bool> {
+        return lazyMutableProperty(self, &ReactiveBindAssocationKeys.SelectedProperty, { self.selected = $0 }, { self.selected  })
+    }
+}
