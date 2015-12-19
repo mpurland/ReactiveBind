@@ -4,6 +4,7 @@ import ReactiveCocoa
 public enum ReactiveBindAssocationKey: String {
     case Hidden
     case Alpha
+    case BackgroundColor
     case Text
     case AttributedText
     case Enabled
@@ -15,6 +16,7 @@ public enum ReactiveBindAssocationKey: String {
 public struct ReactiveBindAssocationKeys {
     static var HiddenProperty = ReactiveBindAssocationKey.Hidden.rawValue
     static var AlphaProperty = ReactiveBindAssocationKey.Alpha.rawValue
+    static var BackgroundColorProperty = ReactiveBindAssocationKey.BackgroundColor.rawValue
     static var TextProperty = ReactiveBindAssocationKey.Text.rawValue
     static var AttributedTextProperty = ReactiveBindAssocationKey.AttributedText.rawValue
     static var EnabledProperty = ReactiveBindAssocationKey.Enabled.rawValue

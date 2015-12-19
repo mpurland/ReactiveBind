@@ -9,6 +9,10 @@ extension UIView {
     public var rac_hidden: MutableProperty<Bool> {
         return lazyMutableProperty(self, &ReactiveBindAssocationKeys.HiddenProperty, { self.hidden = $0 }, { self.hidden  })
     }
+    
+    public var rac_backgroundColor: MutableProperty<UIColor?> {
+        return lazyMutableProperty(self, &ReactiveBindAssocationKeys.BackgroundColorProperty, { self.backgroundColor = $0 }, { self.backgroundColor  })
+    }
 }
 
 extension UIBarItem {
