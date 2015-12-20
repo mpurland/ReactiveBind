@@ -32,15 +32,18 @@ public func lazyAssociatedProperty<T: AnyObject>(host: AnyObject, _ key: UnsafeP
         associatedProperty = factory()
         objc_setAssociatedObject(host, key, associatedProperty, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
     }
+    
     return associatedProperty!
 }
 
 public func lazyMutableProperty<T>(host: AnyObject, _ key: UnsafePointer<Void>, _ setter: T -> (), _ getter: () -> T) -> MutableProperty<T> {
     return lazyAssociatedProperty(host, key) {
         let property = MutableProperty<T>(getter())
+        
         property.producer.startWithNext { newValue in
             setter(newValue)
         }
+        
         return property
     }
 }
@@ -55,9 +58,11 @@ public func lazyMutablePropertyDefaultValue<T>(host: AnyObject, _ key: UnsafePoi
 public func lazyMutablePropertyOptional<T>(host: AnyObject, _ key: UnsafePointer<Void>, _ setter: T? -> (), _ getter: () -> T?) -> MutableProperty<T?> {
     return lazyAssociatedProperty(host, key) {
         let property = MutableProperty<T?>(getter())
+        
         property.producer.startWithNext { newValue in
             setter(newValue)
         }
+        
         return property
     }
 }

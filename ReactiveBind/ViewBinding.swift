@@ -25,9 +25,11 @@ extension UIControl {
     public var rac_enabled: MutableProperty<Bool> {
         return lazyMutableProperty(self, &ReactiveBindAssocationKeys.EnabledProperty, { self.enabled = $0 }, { self.enabled  })
     }
+    
     public var rac_highlighted: MutableProperty<Bool> {
         return lazyMutableProperty(self, &ReactiveBindAssocationKeys.HighlightedProperty, { self.highlighted = $0 }, { self.highlighted  })
     }
+    
     public var rac_selected: MutableProperty<Bool> {
         return lazyMutableProperty(self, &ReactiveBindAssocationKeys.SelectedProperty, { self.selected = $0 }, { self.selected  })
     }
@@ -91,6 +93,7 @@ extension UITableViewCell {
     public var rac_highlighted: MutableProperty<Bool> {
         return lazyMutableProperty(self, &ReactiveBindAssocationKeys.HighlightedProperty, { self.highlighted = $0 }, { self.highlighted  })
     }
+    
     public var rac_selected: MutableProperty<Bool> {
         return lazyMutableProperty(self, &ReactiveBindAssocationKeys.SelectedProperty, { self.selected = $0 }, { self.selected  })
     }
@@ -100,6 +103,7 @@ extension UICollectionViewCell {
     public var rac_highlighted: MutableProperty<Bool> {
         return lazyMutableProperty(self, &ReactiveBindAssocationKeys.HighlightedProperty, { self.highlighted = $0 }, { self.highlighted  })
     }
+    
     public var rac_selected: MutableProperty<Bool> {
         return lazyMutableProperty(self, &ReactiveBindAssocationKeys.SelectedProperty, { self.selected = $0 }, { self.selected  })
     }
