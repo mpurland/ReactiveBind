@@ -48,3 +48,16 @@ extension Action {
 public func <~ <Input, Output>(action: Action<Input, Output, NoError>, producer: SignalProducer<Input, NoError>) -> Disposable {
     return action.startApplyOn(producer)
 }
+
+/// A runnable action with the given closure.
+public func run(closure: () -> ()) -> Action<Void, Void, NoError> {
+    return run((), { closure })
+}
+
+/// A runnable action with the given object as context for the given closure.
+public func run<T>(object: T, _ closure: T -> () -> ()) -> Action<Void, Void, NoError> {
+    return Action<Void, Void, NoError> { _ in
+        closure(object)()
+        return SignalProducer<Void, NoError>.empty
+    }
+}
