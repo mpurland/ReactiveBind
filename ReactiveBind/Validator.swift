@@ -14,7 +14,7 @@ protocol ValidatablePropertyType: PropertyType, PropertyValidator {
 extension ValidatablePropertyType {
     /// A signal producer that reacts to the text field text changes and uses the given validator and returns if the text is valid.
     func rac_valid(validator: Value -> Bool) -> SignalProducer<Bool, NoError> {
-        return producer.map { validator($0) }
+        return producer.map(validator)
     }
 }
 
