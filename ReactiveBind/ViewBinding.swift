@@ -108,3 +108,13 @@ extension UICollectionViewCell {
         return lazyMutableProperty(self, &ReactiveBindAssocationKeys.SelectedProperty, { self.selected = $0 }, { self.selected  })
     }
 }
+
+extension UIViewController {
+    public var rac_title: MutableProperty<String> {
+        return lazyMutableProperty(self, &ReactiveBindAssocationKeys.TitleProperty, { self.title = $0 }, { self.title  })
+    }
+    
+    public var rac_titleView: MutableProperty<UIView?> {
+        return lazyMutableProperty(self, &ReactiveBindAssocationKeys.TitleViewProperty, { self.navigationItem.titleView = $0 }, { self.navigationItem.titleView  })
+    }
+}
