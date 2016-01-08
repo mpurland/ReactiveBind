@@ -110,7 +110,7 @@ extension UICollectionViewCell {
 }
 
 extension UIViewController {
-    public var rac_title: MutableProperty<String> {
+    public var rac_title: MutableProperty<String?> {
         return lazyMutableProperty(self, &ReactiveBindAssocationKeys.TitleProperty, { self.title = $0 }, { self.title  })
     }
     
