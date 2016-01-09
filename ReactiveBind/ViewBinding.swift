@@ -117,4 +117,8 @@ extension UIViewController {
     public var rac_titleView: MutableProperty<UIView?> {
         return lazyMutableProperty(self, &ReactiveBindAssocationKeys.TitleViewProperty, { self.navigationItem.titleView = $0 }, { self.navigationItem.titleView  })
     }
+    
+    public var rac_leftBarButtonItem: MutableProperty<UIBarButtonItem?> {
+        return lazyMutableProperty(self, &ReactiveBindAssocationKeys.TitleViewProperty, { self.navigationItem.leftBarButtonItem = $0 }, { self.navigationItem.leftBarButtonItem  })
+    }
 }
