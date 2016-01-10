@@ -14,6 +14,7 @@ public enum ReactiveBindAssocationKey: String {
     case Title
     case TitleView
     case LeftBarButtonItem
+    case LeftBarButtonItems
 }
 
 public struct ReactiveBindAssocationKeys {
@@ -29,6 +30,7 @@ public struct ReactiveBindAssocationKeys {
     static var TitleProperty = ReactiveBindAssocationKey.Title.rawValue
     static var TitleViewProperty = ReactiveBindAssocationKey.TitleView.rawValue
     static var LeftBarButtonItemProperty = ReactiveBindAssocationKey.LeftBarButtonItem.rawValue
+    static var LeftBarButtonItemsProperty = ReactiveBindAssocationKey.LeftBarButtonItems.rawValue
 }
 
 public func lazyAssociatedProperty<T: AnyObject>(host: AnyObject, _ key: UnsafePointer<Void>, _ factory: ()->T) -> T {

@@ -121,4 +121,8 @@ extension UIViewController {
     public var rac_leftBarButtonItem: MutableProperty<UIBarButtonItem?> {
         return lazyMutableProperty(self, &ReactiveBindAssocationKeys.LeftBarButtonItemProperty, { self.navigationItem.leftBarButtonItem = $0 }, { self.navigationItem.leftBarButtonItem  })
     }
+    
+    public var rac_leftBarButtonItems: MutableProperty<[UIBarButtonItem]?> {
+        return lazyMutableProperty(self, &ReactiveBindAssocationKeys.LeftBarButtonItemsProperty, { self.navigationItem.leftBarButtonItems = $0 }, { self.navigationItem.leftBarButtonItems  })
+    }
 }
