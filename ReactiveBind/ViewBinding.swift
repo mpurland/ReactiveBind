@@ -91,42 +91,46 @@ extension UIImageView {
 
 extension UITableViewCell {
     public var rac_highlighted: MutableProperty<Bool> {
-        return lazyMutableProperty(self, &ReactiveBindAssocationKeys.HighlightedProperty, { self.highlighted = $0 }, { self.highlighted  })
+        return lazyMutableProperty(self, &ReactiveBindAssocationKeys.HighlightedProperty, { self.highlighted = $0 }, { self.highlighted })
     }
     
     public var rac_selected: MutableProperty<Bool> {
-        return lazyMutableProperty(self, &ReactiveBindAssocationKeys.SelectedProperty, { self.selected = $0 }, { self.selected  })
+        return lazyMutableProperty(self, &ReactiveBindAssocationKeys.SelectedProperty, { self.selected = $0 }, { self.selected })
     }
 }
 
 extension UICollectionViewCell {
     public var rac_highlighted: MutableProperty<Bool> {
-        return lazyMutableProperty(self, &ReactiveBindAssocationKeys.HighlightedProperty, { self.highlighted = $0 }, { self.highlighted  })
+        return lazyMutableProperty(self, &ReactiveBindAssocationKeys.HighlightedProperty, { self.highlighted = $0 }, { self.highlighted })
     }
     
     public var rac_selected: MutableProperty<Bool> {
-        return lazyMutableProperty(self, &ReactiveBindAssocationKeys.SelectedProperty, { self.selected = $0 }, { self.selected  })
+        return lazyMutableProperty(self, &ReactiveBindAssocationKeys.SelectedProperty, { self.selected = $0 }, { self.selected })
     }
 }
 
 extension UIViewController {
     public var rac_title: MutableProperty<String?> {
-        return lazyMutableProperty(self, &ReactiveBindAssocationKeys.TitleProperty, { self.title = $0 }, { self.title  })
+        return lazyMutableProperty(self, &ReactiveBindAssocationKeys.TitleProperty, { self.title = $0 }, { self.title })
     }
     
     public var rac_titleView: MutableProperty<UIView?> {
-        return lazyMutableProperty(self, &ReactiveBindAssocationKeys.TitleViewProperty, { self.navigationItem.titleView = $0 }, { self.navigationItem.titleView  })
+        return lazyMutableProperty(self, &ReactiveBindAssocationKeys.TitleViewProperty, { self.navigationItem.titleView = $0 }, { self.navigationItem.titleView })
     }
     
     public var rac_leftBarButtonItem: MutableProperty<UIBarButtonItem?> {
-        return lazyMutableProperty(self, &ReactiveBindAssocationKeys.LeftBarButtonItemProperty, { self.navigationItem.leftBarButtonItem = $0 }, { self.navigationItem.leftBarButtonItem  })
+        return lazyMutableProperty(self, &ReactiveBindAssocationKeys.LeftBarButtonItemProperty, { self.navigationItem.leftBarButtonItem = $0 }, { self.navigationItem.leftBarButtonItem })
     }
     
     public var rac_leftBarButtonItems: MutableProperty<[UIBarButtonItem]?> {
-        return lazyMutableProperty(self, &ReactiveBindAssocationKeys.LeftBarButtonItemsProperty, { self.navigationItem.leftBarButtonItems = $0 }, { self.navigationItem.leftBarButtonItems  })
+        return lazyMutableProperty(self, &ReactiveBindAssocationKeys.LeftBarButtonItemsProperty, { self.navigationItem.leftBarButtonItems = $0 }, { self.navigationItem.leftBarButtonItems })
     }
     
     public var rac_rightBarButtonItem: MutableProperty<UIBarButtonItem?> {
-        return lazyMutableProperty(self, &ReactiveBindAssocationKeys.RightBarButtonItemProperty, { self.navigationItem.rightBarButtonItem = $0 }, { self.navigationItem.rightBarButtonItem  })
+        return lazyMutableProperty(self, &ReactiveBindAssocationKeys.RightBarButtonItemProperty, { self.navigationItem.rightBarButtonItem = $0 }, { self.navigationItem.rightBarButtonItem })
+    }
+    
+    public var rac_rightBarButtonItems: MutableProperty<[UIBarButtonItem]?> {
+        return lazyMutableProperty(self, &ReactiveBindAssocationKeys.RightBarButtonItemsProperty, { self.navigationItem.rightBarButtonItems = $0 }, { self.navigationItem.rightBarButtonItems })
     }
 }
