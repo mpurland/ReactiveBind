@@ -7,6 +7,7 @@ public enum ReactiveBindAssocationKey: String {
     case BackgroundColor
     case Text
     case AttributedText
+    case TextColor
     case Enabled
     case Highlighted
     case Selected
@@ -25,6 +26,7 @@ public struct ReactiveBindAssocationKeys {
     static var BackgroundColorProperty = ReactiveBindAssocationKey.BackgroundColor.rawValue
     static var TextProperty = ReactiveBindAssocationKey.Text.rawValue
     static var AttributedTextProperty = ReactiveBindAssocationKey.AttributedText.rawValue
+    static var TextColorProperty = ReactiveBindAssocationKey.TextColor.rawValue
     static var EnabledProperty = ReactiveBindAssocationKey.Enabled.rawValue
     static var HighlightedProperty = ReactiveBindAssocationKey.Highlighted.rawValue
     static var SelectedProperty = ReactiveBindAssocationKey.Selected.rawValue

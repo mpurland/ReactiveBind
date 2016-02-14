@@ -43,6 +43,10 @@ extension UILabel {
     public var rac_attributedText: MutableProperty<NSAttributedString?> {
         return lazyMutableProperty(self, &ReactiveBindAssocationKeys.AttributedTextProperty, { self.attributedText = $0 }, { self.attributedText  })
     }
+
+    public var rac_textColor: MutableProperty<UIColor?> {
+        return lazyMutableProperty(self, &ReactiveBindAssocationKeys.TextColorProperty, { self.textColor = $0 }, { self.textColor })
+    }
 }
 
 extension UITextField {
