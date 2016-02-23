@@ -66,9 +66,28 @@ extension UITextField {
             return property
         }
     }
-}
+    
+    public var rac_attributedText: MutableProperty<NSAttributedString?> {
+        return lazyAssociatedProperty(self, &ReactiveBindAssocationKeys.AttributedTextProperty) {
+            self.rac_signalForControlEvents(UIControlEvents.EditingChanged).toSignalProducer().startWithNext { _ in
+                let value = self.attributedText
+                self.rac_attributedText.value = value
+            }
+            
+            let property = MutableProperty<NSAttributedString?>(self.attributedText)
+            
+            property.producer.startWithNext { newValue in
+                self.attributedText = newValue
+            }
+            
+            return property
+        }
+    }
+    
+    public var rac_textColor: MutableProperty<UIColor?> {
+        return lazyMutableProperty(self, &ReactiveBindAssocationKeys.TextColorProperty, { self.textColor = $0 }, { self.textColor })
+    }
 
-extension UITextField {
     /// A property that represents the active status of whether the text field is being edited (active) or not being edited (not active)
     public var rac_active: SignalProducer<Bool, NoError> {
         let property = MutableProperty<Bool>(false)
