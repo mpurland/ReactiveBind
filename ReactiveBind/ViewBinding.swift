@@ -21,6 +21,24 @@ extension UIBarItem {
     }
 }
 
+extension UIButton {
+    public var rac_normalTitle: MutableProperty<String?> {
+        return lazyMutableProperty(self, &ReactiveBindAssocationKeys.NormalTitleProperty, { self.setTitle($0, forState: .Normal) }, { self.titleForState(.Normal) })
+    }
+    
+    public var rac_highlightedTitle: MutableProperty<String?> {
+        return lazyMutableProperty(self, &ReactiveBindAssocationKeys.HighlightedTitleProperty, { self.setTitle($0, forState: .Highlighted) }, { self.titleForState(.Highlighted) })
+    }
+
+    public var rac_selectedTitle: MutableProperty<String?> {
+        return lazyMutableProperty(self, &ReactiveBindAssocationKeys.SelectedTitleProperty, { self.setTitle($0, forState: .Selected) }, { self.titleForState(.Selected) })
+    }
+
+    public var rac_disabledTitle: MutableProperty<String?> {
+        return lazyMutableProperty(self, &ReactiveBindAssocationKeys.DisabledTitleProperty, { self.setTitle($0, forState: .Disabled) }, { self.titleForState(.Disabled) })
+    }
+}
+
 extension UIControl {
     public var rac_enabled: MutableProperty<Bool> {
         return lazyMutableProperty(self, &ReactiveBindAssocationKeys.EnabledProperty, { self.enabled = $0 }, { self.enabled  })

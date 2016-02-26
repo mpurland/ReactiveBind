@@ -6,6 +6,10 @@ public enum ReactiveBindAssocationKey: String {
     case Alpha
     case BackgroundColor
     case Text
+    case NormalTitle
+    case HighlightedTitle
+    case SelectedTitle
+    case DisabledTitle
     case AttributedText
     case TextColor
     case Enabled
@@ -25,6 +29,10 @@ public struct ReactiveBindAssocationKeys {
     static var AlphaProperty = ReactiveBindAssocationKey.Alpha.rawValue
     static var BackgroundColorProperty = ReactiveBindAssocationKey.BackgroundColor.rawValue
     static var TextProperty = ReactiveBindAssocationKey.Text.rawValue
+    static var NormalTitleProperty = ReactiveBindAssocationKey.NormalTitle.rawValue
+    static var HighlightedTitleProperty = ReactiveBindAssocationKey.HighlightedTitle.rawValue
+    static var SelectedTitleProperty = ReactiveBindAssocationKey.SelectedTitle.rawValue
+    static var DisabledTitleProperty = ReactiveBindAssocationKey.DisabledTitle.rawValue
     static var AttributedTextProperty = ReactiveBindAssocationKey.AttributedText.rawValue
     static var TextColorProperty = ReactiveBindAssocationKey.TextColor.rawValue
     static var EnabledProperty = ReactiveBindAssocationKey.Enabled.rawValue
