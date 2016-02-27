@@ -1,6 +1,19 @@
 import Foundation
 import ReactiveCocoa
 
+#if DEBUG
+    internal func assertMainThread() {
+        assert(NSThread.isMainThread(), "Must be main thread.")
+    }
+    
+    internal func assertBackgroundThread() {
+        assert(!NSThread.isMainThread(), "Must be background thread.")
+    }
+#else
+    internal func assertMainThread() {}
+    internal func assertBackgroundThread() {}
+#endif
+
 public enum ReactiveBindAssocationKey: String {
     case Hidden
     case Alpha
@@ -51,6 +64,7 @@ public func lazyAssociatedProperty<T: AnyObject>(host: AnyObject, _ key: UnsafeP
     var associatedProperty = objc_getAssociatedObject(host, key) as? T
     
     if associatedProperty == nil {
+        assertMainThread()
         associatedProperty = factory()
         objc_setAssociatedObject(host, key, associatedProperty, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
     }
@@ -63,6 +77,7 @@ public func lazyMutableProperty<T>(host: AnyObject, _ key: UnsafePointer<Void>, 
         let property = MutableProperty<T>(getter())
         
         property.producer.startWithNext { newValue in
+            assertMainThread()
             setter(newValue)
         }
         
@@ -82,6 +97,7 @@ public func lazyMutablePropertyOptional<T>(host: AnyObject, _ key: UnsafePointer
         let property = MutableProperty<T?>(getter())
         
         property.producer.startWithNext { newValue in
+            assertMainThread()
             setter(newValue)
         }
         
