@@ -1,5 +1,6 @@
 import UIKit
 import ReactiveCocoa
+import Result
     
 /// Validator extensions for UITextField
 extension UITextField {

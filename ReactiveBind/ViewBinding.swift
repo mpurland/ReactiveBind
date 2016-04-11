@@ -1,5 +1,6 @@
 import UIKit
 import ReactiveCocoa
+import Result
 
 extension UIView {
     public var rac_alpha: MutableProperty<CGFloat> {
