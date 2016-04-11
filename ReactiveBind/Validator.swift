@@ -1,4 +1,5 @@
 import ReactiveCocoa
+import Result
 
 public typealias StringValidatorAction = Action<String, Bool, NoError>
 
@@ -12,7 +13,7 @@ public func validatorAction(validator: String -> Bool) -> StringValidatorAction 
 
 /// Property validator
 public protocol PropertyValidator {
-    typealias Value
+    associatedtype Value
     
     func rac_valid(validator: Value -> Bool) -> SignalProducer<Bool, NoError>
 }

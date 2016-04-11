@@ -1,5 +1,6 @@
 import Foundation
 import ReactiveCocoa
+import Result
 
 /// A runnable action is an `Action` that takes no input, output, and does not error.
 typealias RunnableAction = Action<Void, Void, NoError>

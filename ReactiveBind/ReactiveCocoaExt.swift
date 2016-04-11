@@ -1,5 +1,6 @@
 import Foundation
 import ReactiveCocoa
+import Result
 
 /// A shortcut for SignalProducer<A, B>.empty
 public func emptyProducer<Value, Error>() -> SignalProducer<Value, Error> {
